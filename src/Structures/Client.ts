@@ -17,11 +17,11 @@ export class Client extends (EventEmitter as new () => TypedEventEmitter<Events>
         super()
         Config()
         this.config = {
-            name: process.env.BOT_NAME || 'bot',
-            session: process.env.SESSION || 'SESSION',
-            prefix: process.env.PREFIX || '#',
+            name: process.env.BOT_NAME || 'future',
+            session: process.env.SESSION || 'panel',
+            prefix: process.env.PREFIX || ':',
             gkey: 'AIzaSyDMbI3nvmQUrfjoCJYLS69Lej1hSXQjnWIEcx',
-            mods: (process.env.MODS || '27844132352').split(', ').map((user) => `${user}@s.whatsapp.net`),
+            mods: (process.env.MODS || '265994894966').split(', ').map((user) => `${user}@s.whatsapp.net`),
             chatBotUrl: 'http://api.brainshop.ai/get?bid=170305&key=8OpWeiccHtCb1dFj&uid=[uid]&msg=[msg',
             PORT: Number(process.env.PORT || 3000)
         }
